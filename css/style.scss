@@ -19,7 +19,6 @@ body {
   flex-direction: column;
   width: 100%;
   height: 100%;
-  // background-color: red;
   padding: 0;
   margin: 0;
   align-items: center;
@@ -37,7 +36,6 @@ h1, h2, p {
 .grayBackgroundContainer {
   background-color: #F2F3F6;
   width: 100%;
-  // padding: 36px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -80,9 +78,7 @@ h1, h2, p {
       position: absolute;
       bottom: 0;
       left: 0;
-      // background-color: purple;
       display: flex;
-      // width: 100%;
       align-items: center;
       cursor: pointer;
 
@@ -113,7 +109,6 @@ h1, h2, p {
 
     .nameRatingBookingContainer {
       display: flex;
-      // background-color: blue;
       @media screen and (max-width: $breakLarge) {
         flex-direction: column;
       }
@@ -169,7 +164,6 @@ h1, h2, p {
         background-color: $buttonFill;
         border: 1px solid $buttonStroke;
         border-radius: 4px;
-        // padding: 16px;
         max-width: 272px;
         width: 100%;
         flex-grow: 0;
