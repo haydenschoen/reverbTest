@@ -1,0 +1,285 @@
+$fontFamily:    Helvetica, sans-serif;
+$darkText: #34373D;
+$lightText: #9C9EA3;
+$buttonFill: #F49831;
+$buttonHover: #fb8909;
+$buttonStroke: #D27900;
+$linkColor: #0073BB;
+$contactButtonFill: #F2F3F6;
+$contactButtonHover: #dcdde2;
+$contactButtonStroke: #DBDEE4;
+
+$breakLarge: 900px;
+$breakSmall: 600px;
+
+body {
+  font-family: $fontFamily;
+  color: $darkText;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  // background-color: red;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+}
+
+h1, h2, p {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+.grayBackgroundContainer {
+  background-color: #F2F3F6;
+  width: 100%;
+  // padding: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.locationFeatureContainer {
+  display: flex;
+  max-width: 1000px;
+  margin: 36px 36px 0 36px;
+
+  @media screen and (max-width: $breakSmall) {
+    flex-direction: column;
+    margin: 0px;
+  }
+
+  .locationImageContainer {
+    width: 223px;
+    height: 223px;
+    border-radius: 4px;
+    overflow: hidden;
+    flex-shrink: 0;
+    position: relative;
+    display: flex;
+    margin-bottom: 36px;
+
+    @media screen and (max-width: $breakSmall) {
+      border-radius: 0px;
+      width: 100%;
+    }
+
+    .locationImage {
+      position: absolute;
+      width: 100%;
+      margin: -50% 0 auto 0;
+      top: 50%;
+      display: block;
+    }
+
+    .viewMoreContainer {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      // background-color: purple;
+      display: flex;
+      // width: 100%;
+      align-items: center;
+      cursor: pointer;
+
+      @media screen and (max-width: $breakSmall) {
+        margin-left: 22px;
+      }
+
+      img {
+        width: 18px;
+        height: 18px;
+        padding: 14px;
+      }
+
+      p {
+        color: white;
+        font-size: 12px;
+        padding-right: 14px;
+      }
+    }
+  }
+
+  .locationDescriptionContainer {
+    margin-left: 36px;
+    margin-right: 36px;
+    margin-bottom: 36px;
+    display: flex;
+    flex-direction: column;
+
+    .nameRatingBookingContainer {
+      display: flex;
+      // background-color: blue;
+      @media screen and (max-width: $breakLarge) {
+        flex-direction: column;
+      }
+
+      .nameRatingLocation {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+
+        h1 {
+          font-size: 28px;
+        }
+
+        .ratingContainer {
+          display: flex;
+          margin-top: 10px;
+          align-items: center;
+
+          img {
+            width: 22px;
+            height: 22px;
+            margin-right: 4px;
+          }
+
+          p {
+            color: $linkColor;
+            font-size: 18px;
+            margin-left: 8px;
+            cursor: pointer;
+          }
+        }
+
+        .locationContainer {
+          display: flex;
+          margin-top: 10px;
+          align-items: center;
+
+          img {
+            margin-right: 10px;
+          }
+
+          p {
+            font-size: 18px;
+          }
+        }
+      }
+
+      .bookNowButton {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        background-color: $buttonFill;
+        border: 1px solid $buttonStroke;
+        border-radius: 4px;
+        // padding: 16px;
+        max-width: 272px;
+        width: 100%;
+        flex-grow: 0;
+        cursor: pointer;
+        height: 60px;
+
+        @media screen and (max-width: $breakLarge) {
+          margin-top: 20px;
+        }
+
+        &:hover {
+          background-color: $buttonHover;
+        }
+      }
+    }
+
+    .infoContainer {
+      display: flex;
+      flex-direction: column;
+      margin-top: 16px;
+
+      p {
+        font-size: 18px;
+      }
+
+      div {
+        display: flex;
+        margin-top: 8px;
+
+        img {
+          width: 24px;
+          height: 24px;
+          margin-right: 14px;
+        }
+      }
+    }
+  }
+}
+
+.descriptionContactContainer {
+  display: flex;
+  max-width: 1000px;
+  margin: 36px;
+
+  @media screen and (max-width: $breakLarge) {
+    flex-direction: column;
+  }
+
+  h2 {
+    font-size: 16px;
+    color: $lightText;
+    margin-bottom: 14px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  .description {
+    flex: 6;
+    display: flex;
+    flex-direction: column;
+
+    .descriptionText {
+      height: 140px;
+      overflow: hidden;
+      position: relative;
+
+      .fade {
+        background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+        height: 60px;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+      }
+    }
+
+    .readMoreButton {
+      align-self: center;
+      padding: 10px;
+      cursor: pointer;
+      color: $linkColor;
+      font-size: 18px;
+    }
+  }
+
+  .contact {
+    margin-left: 60px;
+    flex: 4;
+
+    @media screen and (max-width: $breakLarge) {
+      margin-left: 0px;
+      margin-top: 36px;
+    }
+
+    div {
+      width: 100%;
+      height: 48px;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $contactButtonFill;
+      border: 1px solid $contactButtonStroke;
+      border-radius: 4px;
+      margin-top: 58px;
+      max-width: 370px;
+      &:hover {
+        background-color: $contactButtonHover;
+      }
+    }
+  }
+}

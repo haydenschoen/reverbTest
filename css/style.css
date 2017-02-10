@@ -1,0 +1,197 @@
+body {
+  font-family: Helvetica, sans-serif;
+  color: #34373D;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  align-items: center; }
+
+h1, h2, p {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+.grayBackgroundContainer {
+  background-color: #F2F3F6;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.locationFeatureContainer {
+  display: flex;
+  max-width: 1000px;
+  margin: 36px 36px 0 36px; }
+  @media screen and (max-width: 600px) {
+    .locationFeatureContainer {
+      flex-direction: column;
+      margin: 0px; } }
+  .locationFeatureContainer .locationImageContainer {
+    width: 223px;
+    height: 223px;
+    border-radius: 4px;
+    overflow: hidden;
+    flex-shrink: 0;
+    position: relative;
+    display: flex;
+    margin-bottom: 36px; }
+    @media screen and (max-width: 600px) {
+      .locationFeatureContainer .locationImageContainer {
+        border-radius: 0px;
+        width: 100%; } }
+    .locationFeatureContainer .locationImageContainer .locationImage {
+      position: absolute;
+      width: 100%;
+      margin: -50% 0 auto 0;
+      top: 50%;
+      display: block; }
+    .locationFeatureContainer .locationImageContainer .viewMoreContainer {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      display: flex;
+      align-items: center;
+      cursor: pointer; }
+      @media screen and (max-width: 600px) {
+        .locationFeatureContainer .locationImageContainer .viewMoreContainer {
+          margin-left: 22px; } }
+      .locationFeatureContainer .locationImageContainer .viewMoreContainer img {
+        width: 18px;
+        height: 18px;
+        padding: 14px; }
+      .locationFeatureContainer .locationImageContainer .viewMoreContainer p {
+        color: white;
+        font-size: 12px;
+        padding-right: 14px; }
+  .locationFeatureContainer .locationDescriptionContainer {
+    margin-left: 36px;
+    margin-right: 36px;
+    margin-bottom: 36px;
+    display: flex;
+    flex-direction: column; }
+    .locationFeatureContainer .locationDescriptionContainer .nameRatingBookingContainer {
+      display: flex; }
+      @media screen and (max-width: 900px) {
+        .locationFeatureContainer .locationDescriptionContainer .nameRatingBookingContainer {
+          flex-direction: column; } }
+      .locationFeatureContainer .locationDescriptionContainer .nameRatingBookingContainer .nameRatingLocation {
+        display: flex;
+        flex-direction: column;
+        flex: 1; }
+        .locationFeatureContainer .locationDescriptionContainer .nameRatingBookingContainer .nameRatingLocation h1 {
+          font-size: 28px; }
+        .locationFeatureContainer .locationDescriptionContainer .nameRatingBookingContainer .nameRatingLocation .ratingContainer {
+          display: flex;
+          margin-top: 10px;
+          align-items: center; }
+          .locationFeatureContainer .locationDescriptionContainer .nameRatingBookingContainer .nameRatingLocation .ratingContainer img {
+            width: 22px;
+            height: 22px;
+            margin-right: 4px; }
+          .locationFeatureContainer .locationDescriptionContainer .nameRatingBookingContainer .nameRatingLocation .ratingContainer p {
+            color: #0073BB;
+            font-size: 18px;
+            margin-left: 8px;
+            cursor: pointer; }
+        .locationFeatureContainer .locationDescriptionContainer .nameRatingBookingContainer .nameRatingLocation .locationContainer {
+          display: flex;
+          margin-top: 10px;
+          align-items: center; }
+          .locationFeatureContainer .locationDescriptionContainer .nameRatingBookingContainer .nameRatingLocation .locationContainer img {
+            margin-right: 10px; }
+          .locationFeatureContainer .locationDescriptionContainer .nameRatingBookingContainer .nameRatingLocation .locationContainer p {
+            font-size: 18px; }
+      .locationFeatureContainer .locationDescriptionContainer .nameRatingBookingContainer .bookNowButton {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        background-color: #F49831;
+        border: 1px solid #D27900;
+        border-radius: 4px;
+        max-width: 272px;
+        width: 100%;
+        flex-grow: 0;
+        cursor: pointer;
+        height: 60px; }
+        @media screen and (max-width: 900px) {
+          .locationFeatureContainer .locationDescriptionContainer .nameRatingBookingContainer .bookNowButton {
+            margin-top: 20px; } }
+        .locationFeatureContainer .locationDescriptionContainer .nameRatingBookingContainer .bookNowButton:hover {
+          background-color: #fb8909; }
+    .locationFeatureContainer .locationDescriptionContainer .infoContainer {
+      display: flex;
+      flex-direction: column;
+      margin-top: 16px; }
+      .locationFeatureContainer .locationDescriptionContainer .infoContainer p {
+        font-size: 18px; }
+      .locationFeatureContainer .locationDescriptionContainer .infoContainer div {
+        display: flex;
+        margin-top: 8px; }
+        .locationFeatureContainer .locationDescriptionContainer .infoContainer div img {
+          width: 24px;
+          height: 24px;
+          margin-right: 14px; }
+
+.descriptionContactContainer {
+  display: flex;
+  max-width: 1000px;
+  margin: 36px; }
+  @media screen and (max-width: 900px) {
+    .descriptionContactContainer {
+      flex-direction: column; } }
+  .descriptionContactContainer h2 {
+    font-size: 16px;
+    color: #9C9EA3;
+    margin-bottom: 14px; }
+  .descriptionContactContainer p {
+    font-size: 18px; }
+  .descriptionContactContainer .description {
+    flex: 6;
+    display: flex;
+    flex-direction: column; }
+    .descriptionContactContainer .description .descriptionText {
+      height: 140px;
+      overflow: hidden;
+      position: relative; }
+      .descriptionContactContainer .description .descriptionText .fade {
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, white 100%);
+        height: 60px;
+        width: 100%;
+        position: absolute;
+        bottom: 0; }
+    .descriptionContactContainer .description .readMoreButton {
+      align-self: center;
+      padding: 10px;
+      cursor: pointer;
+      color: #0073BB;
+      font-size: 18px; }
+  .descriptionContactContainer .contact {
+    margin-left: 60px;
+    flex: 4; }
+    @media screen and (max-width: 900px) {
+      .descriptionContactContainer .contact {
+        margin-left: 0px;
+        margin-top: 36px; } }
+    .descriptionContactContainer .contact div {
+      width: 100%;
+      height: 48px;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #F2F3F6;
+      border: 1px solid #DBDEE4;
+      border-radius: 4px;
+      margin-top: 58px;
+      max-width: 370px; }
+      .descriptionContactContainer .contact div:hover {
+        background-color: #dcdde2; }
+
+/*# sourceMappingURL=style.css.map */
